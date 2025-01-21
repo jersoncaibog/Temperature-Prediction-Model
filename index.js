@@ -1,3 +1,8 @@
+/**
+ *  Jerson De Real Caibog
+ *  2025-01-21
+ */
+
 import fs from "fs";
 import readline from "readline";
 
@@ -61,5 +66,3 @@ reflecting a ${increaseRate}% increase since ${startYear}.\n`;
     console.log(result)
 
 }    
-
-// Coded by Jerson De Real Caibog
