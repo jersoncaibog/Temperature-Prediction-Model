@@ -2,7 +2,10 @@
 import csvParser from "csv-parser";
 import fs from "fs";
 
-const csvFilePath = "observed-annual-average.csv"; // your CSV file
+/**
+ * data source: https://climateknowledgeportal.worldbank.org/country/philippines/climate-data-historical
+ */
+const csvFilePath = "observed-annual-average.csv"; // your CSV file.
 const jsonFilePath = "data.json" // yout JSON file where the data will be stored
 
 const stream = fs.createReadStream(csvFilePath);
