@@ -2,7 +2,10 @@
 import csvParser from "csv-parser";
 import fs from "fs";
 
-const stream = fs.createReadStream("observed-annual-average.csv");
+const csvFilePath = "observed-annual-average.csv"; // your CSV file
+const jsonFilePath = "data.json" // yout JSON file where the data will be stored
+
+const stream = fs.createReadStream(csvFilePath);
 const data = []
 
 stream
@@ -12,7 +15,7 @@ stream
     })
     .on("end", () => {
         
-        fs.writeFile("data.json", JSON.stringify(data), (err, data) => {
+        fs.writeFile(jsonFilePath, JSON.stringify(data), (err, data) => {
             if (err) {
                 console.error("Error writing file:", err);
             } else {
