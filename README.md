@@ -1,6 +1,5 @@
 # Philippines' Average Temperature Prediction Model
 
-## Description
 This project converts a CSV file containing historical temperature data into JSON format and uses a simple linear regression model to predict future temperatures based on the historical data.
 
 ## Project Structure
